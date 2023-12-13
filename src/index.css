@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+html, main {
+    background-color: #021f27;
+    scroll-behavior: smooth ;
+}
+
+.card {
+background-color: #044151;
+}
+.card:hover {
+    background-color: #065b70;
+    transform: translateY(-0.50rem);
+    transition: all 0.3s;
+}
