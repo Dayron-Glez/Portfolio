@@ -17,3 +17,33 @@ background-color: #044151;
     transform: translateY(-0.50rem);
     transition: all 0.3s;
 }
+
+.project-card:hover {
+    transform: translateY(-0.50rem);
+    transition: all 0.3s;
+    .project-info {
+        background-color: #065b70;
+
+    }
+}
+
+.project-card {
+    max-width: 350px;
+}
+
+.form-input {
+    background-color: #065b70;
+    border-width: 1px;
+    border-color: #498897;
+}
+
+.submit:hover {
+    transform: translateY(-0.50rem);
+    transition: all 0.3s;
+    
+}
+
+.footer-anchor:hover {
+    transform: translateY(-0.50rem);
+    transition: all 0.3s;
+}

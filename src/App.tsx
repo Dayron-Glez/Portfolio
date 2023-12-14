@@ -2,6 +2,7 @@ import './App.css'
 import 'animate.css';
 import HeaderComponent from './components/HeaderComponent';
 import Maincomponent from './components/MainComponent';
+import FooterComponent from './components/FooterComponent';
 function App() {
 
   return (
@@ -9,6 +10,7 @@ function App() {
     
       <HeaderComponent/>
       <Maincomponent/>
+      <FooterComponent/>
 
     
     {/* <main className='flex flex-col w-[100%] mt-5'>
