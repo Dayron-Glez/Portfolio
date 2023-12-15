@@ -5,12 +5,12 @@ const FooterComponent = () => {
     return (
         <>
 
-            <footer className='flex flex-col h-full w-full p-10'>
+            <footer className='flex flex-col h-full w-full p-10 lg:px-20'>
 
                 <div className=" items-center ">
 
                     <div className="">
-                        <h2 className=' text-[#2cb7ea] text-4xl '>Hit me up !</h2>
+                        <h2 id='contact' className=' text-[#2cb7ea] text-4xl '>Hit me up <span className='animate__animated animate__fadeIn animate__slow animate__infinite'>!</span></h2>
 
                         <form action="https://formsubmit.co/125090127fb13929834b0448d636f09c" method="POST">
                             <div className="mb-5 mt-20">
@@ -83,10 +83,10 @@ const FooterComponent = () => {
                             <input type="hidden" name='_next' value='http://localhost:5173/' />
 
                         </form>
-                        <div className='flex flex-row w-full mt-20 justify-between items-center'>
-                            <a className='footer-anchor' href="http://api.whatsapp.com/send?phone=54435959"><img src={WhatsAppLogo} alt="WhatsAppLogo" /></a>
-                            <a className='footer-anchor' href="https://github.com/Dayron-Glez"><img src={GitHubLogo} alt="GitHubLogo" /></a>
-                            <a className='footer-anchor' href="https://www.linkedin.com/in/dayron-gonzalez-garcia-9579ab229/"><img src={LinkedInLogo} alt="LinkedInLogo" /></a>
+                        <div className='flex flex-row w-full mt-20 justify-between items-center lg:justify-evenly'>
+                            <a className='footer-anchor ' href="http://api.whatsapp.com/send?phone=54435959"><img className='lg:h-16 lg:w-16' src={WhatsAppLogo} alt="WhatsAppLogo" /></a>
+                            <a className='footer-anchor ' href="https://github.com/Dayron-Glez"><img className='lg:h-16 lg:w-16' src={GitHubLogo} alt="GitHubLogo" /></a>
+                            <a className='footer-anchor ' href="https://www.linkedin.com/in/dayron-gonzalez-garcia-9579ab229/"><img className='lg:h-16 lg:w-16' src={LinkedInLogo} alt="LinkedInLogo" /></a>
                         </div>
                     </div>
                 </div>

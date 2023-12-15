@@ -28,7 +28,8 @@ background-color: #044151;
 }
 
 .project-card {
-    max-width: 350px;
+    max-width: 400px;
+    max-height: 400px;
 }
 
 .form-input {
@@ -47,3 +48,31 @@ background-color: #044151;
     transform: translateY(-0.50rem);
     transition: all 0.3s;
 }
+
+@keyframes aparecer {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  #svg {
+    animation: aparecer 1.5s forwards, bounce 1.5s 1.5s infinite;
+  }
+  
+ 
+
