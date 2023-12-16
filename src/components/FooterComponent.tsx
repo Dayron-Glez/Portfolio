@@ -1,7 +1,25 @@
 import WhatsAppLogo from '../assets/whatsapp.png'
 import LinkedInLogo from '../assets/linkedin.png'
 import GitHubLogo from '../assets/github (1).png'
+import { contactForm } from '../interfaces/formInterface'
+import { useForm } from "react-hook-form";
+
 const FooterComponent = () => {
+    const form = useForm<contactForm>({
+        defaultValues: {
+            name: "",
+            email: '',
+            subject: '',
+            message: ''
+        }
+
+    });
+    const { register, formState: { isDirty }, reset } = form;
+
+
+
+
+
     return (
         <>
 
@@ -12,7 +30,7 @@ const FooterComponent = () => {
                     <div className="">
                         <h2 id='contact' className=' text-[#2cb7ea] text-4xl '>Hit me up <span className='animate__animated animate__fadeIn animate__slow animate__infinite'>!</span></h2>
 
-                        <form action="https://formsubmit.co/125090127fb13929834b0448d636f09c" method="POST">
+                        <form action="https://formsubmit.co/125090127fb13929834b0448d636f09c" method="POST" onClick={() => { reset }}>
                             <div className="mb-5 mt-20">
                                 <label
                                     htmlFor="name"
@@ -21,6 +39,8 @@ const FooterComponent = () => {
                                     Full Name
                                 </label>
                                 <input
+                                    {...register('name')}
+                                    autoComplete='off'
                                     type="text"
                                     name="name"
                                     id="name"
@@ -36,6 +56,8 @@ const FooterComponent = () => {
                                     Email Address
                                 </label>
                                 <input
+                                    {...register('email')}
+                                    autoComplete='off'
                                     type="email"
                                     name="email"
                                     id="email"
@@ -51,6 +73,8 @@ const FooterComponent = () => {
                                     Subject
                                 </label>
                                 <input
+                                    {...register('subject')}
+                                    autoComplete='off'
                                     type="text"
                                     name="subject"
                                     id="subject"
@@ -66,6 +90,9 @@ const FooterComponent = () => {
                                     Message
                                 </label>
                                 <textarea
+
+                                    {...register('message')}
+                                    autoComplete='off'
                                     rows={4}
                                     name="message"
                                     id="message"
@@ -75,7 +102,9 @@ const FooterComponent = () => {
                             </div>
                             <div>
                                 <button
-                                    className=" submit hover:shadow-form rounded-md bg-[#2cb7ea] py-3 px-8 text-base font-semibold text-white outline-none "
+                                    disabled={!isDirty}
+
+                                    className=" submit hover:shadow-form rounded-md bg-[#2cb7ea] py-3 px-8 text-base font-semibold text-white outline-none disabled:bg-slate-400"
                                 >
                                     Submit
                                 </button>
