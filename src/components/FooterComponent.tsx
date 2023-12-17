@@ -45,7 +45,7 @@ const FooterComponent = () => {
                                     name="name"
                                     id="name"
                                     placeholder="Full Name"
-                                    className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                                    className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:outline-cyan-200"
                                 />
                             </div>
                             <div className="mb-5">
@@ -62,7 +62,7 @@ const FooterComponent = () => {
                                     name="email"
                                     id="email"
                                     placeholder="example@domain.com"
-                                    className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                                    className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:outline-cyan-200"
                                 />
                             </div>
                             <div className="mb-5">
@@ -79,7 +79,7 @@ const FooterComponent = () => {
                                     name="subject"
                                     id="subject"
                                     placeholder="Enter your subject"
-                                    className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                                    className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:outline-cyan-200"
                                 />
                             </div>
                             <div className="mb-5">
@@ -97,7 +97,7 @@ const FooterComponent = () => {
                                     name="message"
                                     id="message"
                                     placeholder="Type your message"
-                                    className="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                                    className="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:outline-cyan-200"
                                 ></textarea>
                             </div>
                             <div>
@@ -109,13 +109,13 @@ const FooterComponent = () => {
                                     Submit
                                 </button>
                             </div>
-                            <input type="hidden" name='_next' value='http://localhost:5173/' />
+                            <input type="hidden" name='_next' value='https://dayronglez-portfolio.vercel.app' />
 
                         </form>
                         <div className='flex flex-row w-full mt-20 justify-between items-center lg:justify-evenly'>
-                            <a className='footer-anchor ' href="http://api.whatsapp.com/send?phone=54435959"><img className='lg:h-16 lg:w-16' src={WhatsAppLogo} alt="WhatsAppLogo" /></a>
-                            <a className='footer-anchor ' href="https://github.com/Dayron-Glez"><img className='lg:h-16 lg:w-16' src={GitHubLogo} alt="GitHubLogo" /></a>
-                            <a className='footer-anchor ' href="https://www.linkedin.com/in/dayron-gonzalez-garcia-9579ab229/"><img className='lg:h-16 lg:w-16' src={LinkedInLogo} alt="LinkedInLogo" /></a>
+                            <a className='footer-anchor' href="http://api.whatsapp.com/send?phone=54435959"><img className='lg:h-16 lg:w-16' src={WhatsAppLogo} alt="WhatsAppLogo" /></a>
+                            <a className='footer-anchor' href="https://github.com/Dayron-Glez"><img className='lg:h-16 lg:w-16' src={GitHubLogo} alt="GitHubLogo" /></a>
+                            <a className='footer-anchor' href="https://www.linkedin.com/in/dayron-gonzalez-garcia-9579ab229/"><img className='lg:h-16 lg:w-16' src={LinkedInLogo} alt="LinkedInLogo" /></a>
                         </div>
                     </div>
                 </div>

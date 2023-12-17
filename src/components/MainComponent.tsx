@@ -29,7 +29,7 @@ const Maincomponent = () => {
               <li className=' list-none p-2 transition-colors duration-500 text-[16px] text-[#2cb7ea]   rounded-md hover:bg-[#2cb7ea] hover:text-white'><a href="#contact">Contact</a></li>
 
 
-              <a download href='../public/DayronGlezCV.pdf' className='flex   text-center items-center p-2'><p className=' p-2 transition-colors duration-500 text-[16px] text-[#2cb7ea]   rounded-md hover:bg-[#2cb7ea] hover:text-white  '>Download CV</p></a>
+              <a download href='/DayronGlezCV.pdf' className='flex   text-center items-center p-2'><p className=' p-2 transition-colors duration-500 text-[16px] text-[#2cb7ea]   rounded-md hover:bg-[#2cb7ea] hover:text-white  '>Download CV</p></a>
             </div>
           </div>
           <div className='hidden lg:flex lg:flex-row lg:max-w-5xl lg:h-20 lg:mb-40'>
@@ -37,7 +37,7 @@ const Maincomponent = () => {
               <li className='text-xl text-white hover:text-[#2cb7ea]'><a href="#all">All Projects</a></li>
               <li className='text-xl text-white hover:text-[#2cb7ea]'><a href="#contact">Contact</a></li>
               <li>
-                <a download href='../public/DayronGlezCV.pdf' className='   text-center   '><p className=' transition-colors  text-xl text-white lg:m-0 lg:p-0 m-4 p-4 rounded-md  hover:text-[#2cb7ea]  '>Download CV</p></a>
+                <a href='/public/DayronGlezCV.pdf' download className='text-center'><p className=' transition-colors  text-xl text-white lg:m-0 lg:p-0 m-4 p-4 rounded-md  hover:text-[#2cb7ea]  '>Download CV</p></a>
               </li>
             </ul>
           </div>
@@ -82,58 +82,58 @@ const Maincomponent = () => {
           </div>
           <div className='flex flex-row pt-20 lg:pt-40 w-full text-center  lg:px-12'>
             <a id='all' className='flex justify-start items-center w-full'>
-              <p  className=' text-cyan-100 text-3xl'>All projects</p>
+              <p className=' text-cyan-100 text-3xl'>All projects</p>
               <img src={ArrowForward} alt="arrow" height={30} width={36} className='animate__animated animate__flash animate__slower animate__infinite invert mt-1' />
             </a>
           </div>
         </section>
         <h2 className='text-[#2cb7ea] text-4xl  mx-auto w-11/12 pl-5 pr-5 pt-20 md:pt-40'>Tools and Skills</h2>
         <section className='grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-10 lg:px-20'>
-          <div className='card items-center tile flex flex-col relative outline-none focus:outline-none bg-shade-2 rounded-lg w-full text-center h-full px-4 py-0 lg:px-10 lg:py-8'>
-            <img src={JavaScriptLogo} alt="React Logo" height={60} width={60} className='pt-10' />
+          <a href='https://lenguajejs.com/' target='_blank' className='card items-center tile flex flex-col relative outline-none focus:outline-none bg-shade-2 rounded-lg w-full text-center h-full px-4 py-0 lg:px-10 lg:py-8'>
+            <img src={JavaScriptLogo} alt="JavaScript Logo" height={60} width={60} className='pt-10' />
             <h3 className=' text-cyan-100 text-3xl pt-5'>JavaScript</h3>
             <p className=' text-cyan-100 text-lg pt-5 pb-10'>Interpreted programming language with first-class functions.</p>
-          </div>
-          <div className='card items-center tile flex flex-col relative outline-none focus:outline-none bg-shade-2 rounded-lg w-full text-center h-full px-4 py-0 lg:px-10 lg:py-8'>
-            <img src={TypeScriptLogo} alt="React Logo" height={60} width={60} className='pt-10' />
+          </a>
+          <a href='https://www.typescriptlang.org/docs/' target='_blank' className='card items-center tile flex flex-col relative outline-none focus:outline-none bg-shade-2 rounded-lg w-full text-center h-full px-4 py-0 lg:px-10 lg:py-8'>
+            <img src={TypeScriptLogo} alt="typeScript Logo" height={60} width={60} className='pt-10' />
             <h3 className=' text-cyan-100 text-3xl pt-5'>TypeScript</h3>
             <p className=' text-cyan-100 text-lg pt-5 pb-10'>A strongly typed programming language that builds on JavaScript.</p>
-          </div>
-          <div className='card items-center tile flex flex-col relative outline-none focus:outline-none bg-shade-2 rounded-lg w-full text-center h-full px-4 py-0 lg:px-10 lg:py-8'>
+          </a>
+          <a href='https://es.react.dev/' target='_blank' className='card items-center tile flex flex-col relative outline-none focus:outline-none bg-shade-2 rounded-lg w-full text-center h-full px-4 py-0 lg:px-10 lg:py-8'>
             <img src={ReactLogo} alt="React Logo" height={60} width={60} className='pt-10' />
             <h3 className=' text-cyan-100 text-3xl pt-5'>React</h3>
             <p className=' text-cyan-100 text-lg  pt-5 pb-10'>A JavaScript library for building user interfaces.</p>
-          </div>
-          <div className='card items-center tile flex flex-col relative outline-none focus:outline-none bg-shade-2 rounded-lg w-full text-center h-full px-4 py-0 lg:px-10 lg:py-8'>
-            <img src={ReduxLogo} alt="React Logo" height={60} width={60} className='pt-10' />
+          </a>
+          <a href='https://redux.js.org/' target='_blank' className='card items-center tile flex flex-col relative outline-none focus:outline-none bg-shade-2 rounded-lg w-full text-center h-full px-4 py-0 lg:px-10 lg:py-8'>
+            <img src={ReduxLogo} alt="Redux Logo" height={60} width={60} className='pt-10' />
             <h3 className=' text-cyan-100 text-3xl pt-5'>Redux</h3>
             <p className=' text-cyan-100 text-lg pt-5 pb-10'>A Predictable State Container for JS Apps.</p>
-          </div>
-          <div className='card items-center tile flex flex-col relative outline-none focus:outline-none bg-shade-2 rounded-lg w-full text-center h-full px-4 py-0 lg:px-10 lg:py-8'>
-            <img src={NextLogo} alt="React Logo" height={60} width={60} className='pt-10' />
+          </a>
+          <a href='https://nextjs.org/docs' target='_blank' className='card items-center tile flex flex-col relative outline-none focus:outline-none bg-shade-2 rounded-lg w-full text-center h-full px-4 py-0 lg:px-10 lg:py-8'>
+            <img src={NextLogo} alt="Next.js Logo" height={60} width={60} className='pt-10' />
             <h3 className=' text-cyan-100 text-3xl pt-5'>Next.js</h3>
             <p className=' text-cyan-100 text-lg pt-5 pb-10'>A React framework for building full-stack web applications.</p>
-          </div>
-          <div className='card items-center tile flex flex-col relative outline-none focus:outline-none bg-shade-2 rounded-lg w-full text-center h-full px-4 py-0 lg:px-10 lg:py-8'>
-            <img src={BootStrapLogo} alt="React Logo" height={60} width={60} className='pt-10' />
+          </a>
+          <a href='https://getbootstrap.com/docs/4.1/getting-started/introduction/' target='_blank' className='card items-center tile flex flex-col relative outline-none focus:outline-none bg-shade-2 rounded-lg w-full text-center h-full px-4 py-0 lg:px-10 lg:py-8'>
+            <img src={BootStrapLogo} alt="Bootstrap Logo" height={60} width={60} className='pt-10' />
             <h3 className=' text-cyan-100 text-3xl pt-5'>Bootstrap</h3>
             <p className=' text-cyan-100 text-lg pt-5 pb-10'>A cross-platform library or open source toolset for site and web application design.</p>
-          </div>
-          <div className='card items-center tile flex flex-col relative outline-none focus:outline-none bg-shade-2 rounded-lg w-full text-center h-full px-4 py-0 lg:px-10 lg:py-8'>
-            <img src={SassLogo} alt="React Logo" height={60} width={60} className='pt-10' />
+          </a>
+          <a href='https://sass-lang.com/documentation/' target='_blank' className='card items-center tile flex flex-col relative outline-none focus:outline-none bg-shade-2 rounded-lg w-full text-center h-full px-4 py-0 lg:px-10 lg:py-8'>
+            <img src={SassLogo} alt="Sass Logo" height={60} width={60} className='pt-10' />
             <h3 className=' text-cyan-100 text-3xl pt-5'>Sass</h3>
             <p className=' text-cyan-100 text-lg pt-5 pb-10'>A stylesheet language that’s compiled to CSS.</p>
-          </div>
-          <div className='card items-center tile flex flex-col relative outline-none focus:outline-none bg-shade-2 rounded-lg w-full text-center h-full px-4 py-0 lg:px-10 lg:py-8'>
-            <img src={TailwindLogo} alt="React Logo" height={60} width={60} className='pt-10' />
+          </a>
+          <a href='https://v2.tailwindcss.com/docs' target='_blank' className='card items-center tile flex flex-col relative outline-none focus:outline-none bg-shade-2 rounded-lg w-full text-center h-full px-4 py-0 lg:px-10 lg:py-8'>
+            <img src={TailwindLogo} alt="Tailwind CSS Logo" height={60} width={60} className='pt-10' />
             <h3 className=' text-cyan-100 text-3xl pt-5'>tailwindcss</h3>
             <p className=' text-cyan-100 text-lg pt-5 pb-10'>A utility-first CSS framework packed with classes.</p>
-          </div>
-          <div className='card items-center tile flex flex-col relative outline-none focus:outline-none bg-shade-2 rounded-lg w-full text-center h-full px-4 py-0 lg:px-10 lg:py-8'>
-            <img src={NodeLogo} alt="React Logo" height={60} width={60} className='pt-10' />
+          </a>
+          <a href='https://nodejs.org/docs/latest/api/' target='_blank' className='card items-center tile flex flex-col relative outline-none focus:outline-none bg-shade-2 rounded-lg w-full text-center h-full px-4 py-0 lg:px-10 lg:py-8'>
+            <img src={NodeLogo} alt="Node Logo" height={60} width={60} className='pt-10' />
             <h3 className=' text-cyan-100 text-3xl pt-5'>Node.js</h3>
             <p className=' text-cyan-100 text-lg pt-5 pb-10'>An open-source, cross-platform JavaScript runtime environment.</p>
-          </div>
+          </a>
 
         </section>
 
