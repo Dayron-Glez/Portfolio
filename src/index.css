@@ -114,15 +114,6 @@ background-color: #044151;
     }
   }
   
-  .leftArrow {
-    animation: moverYRotarIzquierda 2s linear infinite;
-  }
-  
-  .rightArrow {
-    animation: moverYRotarDerecha 2s linear infinite;
-  }
-
-  
   
   .myBackInUp {
     animation-name: myBackInUp;

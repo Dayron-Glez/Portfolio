@@ -11,8 +11,7 @@ import SassLogo from '../assets/sass.png'
 import TailwindLogo from '../assets/tailwind.png'
 import NodeLogo from '../assets/node.png'
 import {  useEffect, useRef } from 'react'
-import RightArrowComponent from './RightArrowComponent'
-import LeftArrowComponent from './LeftArrowComponent'
+
 
 
 const Maincomponent = () => {
