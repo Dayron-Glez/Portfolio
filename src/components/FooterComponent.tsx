@@ -59,7 +59,7 @@ const FooterComponent = () => {
                                         name="name"
                                         id="name"
                                         placeholder="Full Name"
-                                        className="w-full md:w-[450px] rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:outline-cyan-200"
+                                        className="w-full md:w-[450px] rounded-md border border-[#11313a]   bg-[#144251] py-3 px-6 text-base font-medium text-white outline-none  focus:outline-cyan-200 placeholder:text-white"
                                     />
                                 </div>
                                 <div className="mb-5">
@@ -76,7 +76,7 @@ const FooterComponent = () => {
                                         name="email"
                                         id="email"
                                         placeholder="example@domain.com"
-                                        className="w-full  md:w-[450px] rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:outline-cyan-200"
+                                        className="w-full  md:w-[450px] rounded-md border border-[#11313a]   bg-[#144251] py-3 px-6 text-base font-medium text-white outline-none placeholder:text-white  focus:outline-cyan-200"
                                     />
                                 </div>
                                 <div className="mb-5">
@@ -93,7 +93,7 @@ const FooterComponent = () => {
                                         name="subject"
                                         id="subject"
                                         placeholder="Enter your subject"
-                                        className="w-full md:w-[450px] rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:outline-cyan-200"
+                                        className="w-full  md:w-[450px] rounded-md border border-[#11313a]   bg-[#144251] py-3 px-6 text-base font-medium text-white outline-none placeholder:text-white  focus:outline-cyan-200"
                                     />
                                 </div>
                                 <div className="mb-5">
@@ -111,7 +111,7 @@ const FooterComponent = () => {
                                         name="message"
                                         id="message"
                                         placeholder="Type your message"
-                                        className="w-full md:w-[450px] resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:outline-cyan-200"
+                                        className="w-full resize-none  md:w-[450px] rounded-md border border-[#11313a]   bg-[#144251] py-3 px-6 text-base font-medium text-white outline-none placeholder:text-white  focus:outline-cyan-200"
                                     ></textarea>
                                 </div>
                                 <div>

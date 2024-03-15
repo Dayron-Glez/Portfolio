@@ -6,7 +6,7 @@
 
 html, main {
     background-color: #021f27;
-    scroll-behavior: smooth ;
+    scroll-behavior: smooth; 
 }
 
 /* .card {
@@ -50,6 +50,9 @@ background-color: #044151;
     transition: all 0.3s;
 }
 
+
+
+
 @keyframes aparecer {
     0% {
       transform: translateY(100%);
@@ -64,16 +67,82 @@ background-color: #044151;
       transform: translateY(0);
     }
     40% {
-      transform: translateY(-30px);
-    }
-    60% {
       transform: translateY(-15px);
     }
+    60% {
+      transform: translateY(-10px);
+    }
   }
+
+  @keyframes myBackInUp {
+    0% {
+      transform: translateY(600px);
+      opacity: 0;
+    }
+  
+    80% {
+      transform: translateY(-10px);
+    }
+  
+    100% {
+      transform: translateX(0px);
+      transform: translateY(10px);
+      opacity: 1;
+    }
+  }
+  @keyframes moverYRotarIzquierda {
+    0% {
+      transform: translateX(0) rotateY(180deg);
+    }
+    50% {
+      transform: translateX(10px) rotateY(180deg);
+    }
+    100% {
+      transform: translateX(0) rotateY(180deg);
+    }
+  }
+  
+  @keyframes moverYRotarDerecha {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .leftArrow {
+    animation: moverYRotarIzquierda 2s linear infinite;
+  }
+  
+  .rightArrow {
+    animation: moverYRotarDerecha 2s linear infinite;
+  }
+
+  
+  
+  .myBackInUp {
+    animation-name: myBackInUp;
+  }
+  
   
   #svg {
     animation: aparecer 1.5s forwards, bounce 1.5s 1.5s infinite;
   }
   
- 
+
+  .fade {
+    opacity: 0;
+    transition: opacity 1.5s;
+  }
+  
+  .fade.fade-in {
+    opacity: 1;
+  }
+
+  
+  
 
